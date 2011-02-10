@@ -1,0 +1,15 @@
+Usage (example)
+---------------
+
+import sys
+import xmlrpclib
+from pprint import pprint
+
+rpc = xmlrpclib.ServerProxy("http://rpc.hippique.ch/")
+
+result = rpc.horse_info('57321')
+pprint(result)
+
+result = rpc.rider_info('121842')
+pprint(result)
+
